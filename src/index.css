@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #1b1b1b;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.container {
+  animation-duration: 0.7s;
+}
+
+.row {
+  display: flex;
+}
+
+.search-item {
+  border: 2px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  overflow: hidden;
+}
+
+.search-item > input {
+  height: 28px;
+}
+
+.client-list, .search-item {
+  padding: 3%;
+
+}
+
+.short-inf {
+  display: flex;
+  align-items: center;
+  margin: 2%;
+  padding: 2%;
+  background-color: #1d2124;
+
+}
+
+.short-inf:hover {
+  cursor: pointer;
+  background-color: rgba(93, 35, 118, 0.48);
+  transform: scale(1.03);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.short-img {
+  display: flex;
+}
+
+.short-img img {
+  width: auto;
+  height: auto;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.left-sidebar {
+  width: 25%;
+  background-color: #5a6268;
+}
+
+li {
+  list-style: none;
+}
+
+.right-preview {
+  display: flex;
+  width: 74%;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  overflow: visible;
+}
+
+.detail-img img {
+  width: 80%;
+  padding: 27px;
+}
+
+.detail-img {
+  flex: 1;
+}
+
+.detail-text {
+  flex: 3;
+  padding: 20px;
+}
+
+.list-active {
+  background-color: rgba(93, 35, 118, 0.38);
+  transform: scale(1.03);
+  box-shadow: #1d2124;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+}
+
+header {
+  height: 45px;
+  border-bottom: 1px solid silver;
+  display: flex;
+  align-items: center;
+  background-color: #36404a;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+  background-color: #a724ff;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/*media*/
+
+@media screen and (max-width: 990px){
+  .left-sidebar{
+    width: 35%;
+  }
+}
+@media screen and (max-width: 612px){
+  .row{
+    display: block;
+  }
+  .left-sidebar{
+    width: auto;
+  }
+  .right-preview{
+    width: auto;
+  }
+}
